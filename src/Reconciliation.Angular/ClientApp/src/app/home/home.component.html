@@ -1,0 +1,68 @@
+<p *ngIf="!grid" class="text-center"><em>Loading...</em></p>
+
+<h6 class="text-center">We are in Angular App</h6>
+
+<table class='table table-striped table-hover table-bordered' aria-labelledby="tableLabel" *ngIf="grid">
+  <thead>
+    <tr>
+      <th colspan="13" class="text-center">Year {{grid.year}}</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th *ngFor="let title of grid.titles">{{title.monthDisplayName}}</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!-- printing readonly statements -->
+    <tr *ngFor="let row of grid.statements" class="table-secondary">
+      <td>{{ row.title }}</td>
+
+      <td *ngFor="let col of row.values">{{ col.amount }}</td>
+    </tr>
+
+
+    <!-- printing reconciliation -->
+    <tr>
+      <th colspan="13" class="text-center">Reconciliation</th>
+    </tr>
+    <tr *ngFor="let row of grid.rows; index as rowIndex;"
+      [ngClass]="{'table-success': row.flag==1, 'table-danger': row.flag==2}">
+      <td>{{ row.incomeOrExpenseTypeName }}</td>
+
+      <ng-container *ngFor="let col of row.columns; index as colIndex;">
+
+        <td (click)="editCell(rowIndex, colIndex)"
+          *ngIf="!isEditing || isEditing && (editingRow!=rowIndex || editingCol!=colIndex)" title="Click to edit"
+          class="pointer">{{ col.amount }}</td>
+
+        <td *ngIf="isEditing && editingRow==rowIndex  && editingCol==colIndex">
+          <form (ngSubmit)="saveOrUpdate(col)">
+            <input type="number" [(ngModel)]="col.amount" name="amount" (blur)="resetCell()" #amountInput title="Press enter to update" class="edit-input-size"/>
+          </form>
+        </td>
+
+      </ng-container>
+
+    </tr>
+
+
+    <!-- printing result -->
+    <tr *ngFor="let row of grid.results" class="table-secondary">
+      <th>{{ row.title }}</th>
+
+      <th *ngFor="let col of row.values">{{ col.amount }}</th>
+    </tr>
+
+  </tbody>
+</table>
+
+<div class="row mb-5">
+  <div class="col-12 text-center">
+    <span class="badge badge-secondary">Readonly</span>
+    &nbsp;&nbsp;
+    <span class="badge badge-success">Income</span>
+    &nbsp;&nbsp;
+    <span class="badge badge-danger">Expense</span>
+  </div>
+</div>

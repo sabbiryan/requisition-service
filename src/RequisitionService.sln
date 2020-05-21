@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequisitionService.EntityFrameworkCore", "Reconciliation.EntityFrameworkCore\RequisitionService.EntityFrameworkCore.csproj", "{14CFCC68-E01D-4AF7-B0D4-4367ADB91276}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequisitionService.Service", "Reconciliation.Service\RequisitionService.Service.csproj", "{E52CEC91-28C5-49D7-95FB-35918503552A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequisitionService.Shared", "Reconciliation.Shared\RequisitionService.Shared.csproj", "{278E454A-F494-4B74-8F35-F961D204E78B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequisitionService.Angular", "Reconciliation.Angular\RequisitionService.Angular.csproj", "{393F70AA-E341-4C3A-B606-C512BFCCB66A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequisitionService.React", "Reconciliation.React\RequisitionService.React.csproj", "{BB5D5353-35B5-407A-8BC8-765860B3F816}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequisitionService.Controllers", "Reconciliation.Controllers\RequisitionService.Controllers.csproj", "{1D31412F-7569-4910-B1FE-B23A28FCA388}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14CFCC68-E01D-4AF7-B0D4-4367ADB91276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14CFCC68-E01D-4AF7-B0D4-4367ADB91276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14CFCC68-E01D-4AF7-B0D4-4367ADB91276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14CFCC68-E01D-4AF7-B0D4-4367ADB91276}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E52CEC91-28C5-49D7-95FB-35918503552A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E52CEC91-28C5-49D7-95FB-35918503552A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E52CEC91-28C5-49D7-95FB-35918503552A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E52CEC91-28C5-49D7-95FB-35918503552A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{278E454A-F494-4B74-8F35-F961D204E78B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{278E454A-F494-4B74-8F35-F961D204E78B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{278E454A-F494-4B74-8F35-F961D204E78B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{278E454A-F494-4B74-8F35-F961D204E78B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{393F70AA-E341-4C3A-B606-C512BFCCB66A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{393F70AA-E341-4C3A-B606-C512BFCCB66A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{393F70AA-E341-4C3A-B606-C512BFCCB66A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{393F70AA-E341-4C3A-B606-C512BFCCB66A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB5D5353-35B5-407A-8BC8-765860B3F816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB5D5353-35B5-407A-8BC8-765860B3F816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB5D5353-35B5-407A-8BC8-765860B3F816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB5D5353-35B5-407A-8BC8-765860B3F816}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D31412F-7569-4910-B1FE-B23A28FCA388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D31412F-7569-4910-B1FE-B23A28FCA388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D31412F-7569-4910-B1FE-B23A28FCA388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D31412F-7569-4910-B1FE-B23A28FCA388}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {512AA094-6661-49D4-956E-EB2F017DF117}
+	EndGlobalSection
+EndGlobal
