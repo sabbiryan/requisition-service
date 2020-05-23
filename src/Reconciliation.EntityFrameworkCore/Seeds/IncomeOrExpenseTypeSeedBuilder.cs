@@ -10,7 +10,7 @@ namespace ReconciliationApp.EntityFrameworkCore.Seeds
         public const string ExpenseType1 = "Expense Type 1";
         public const string ExpenseType2 = "Expense Type 2";
         public const string ExpenseType3 = "Expense Type 3";
-        public const string IncomeType1 = "Income Type 1";
+        public const string Collection = "Collection";
         public const string IncomeType2 = "Income Type 2";
         public const string IncomeType3 = "Income Type 3";
 
@@ -22,7 +22,7 @@ namespace ReconciliationApp.EntityFrameworkCore.Seeds
                 new IncomeOrExpenseType(ExpenseType2, IncomeOrExpenseFlag.Expense),
                 new IncomeOrExpenseType(ExpenseType3, IncomeOrExpenseFlag.Expense),
 
-                new IncomeOrExpenseType(IncomeType1, IncomeOrExpenseFlag.Income),
+                new IncomeOrExpenseType(Collection, IncomeOrExpenseFlag.Income),
                 new IncomeOrExpenseType(IncomeType2, IncomeOrExpenseFlag.Income),
                 new IncomeOrExpenseType(IncomeType3, IncomeOrExpenseFlag.Income),
             };

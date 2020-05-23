@@ -14,12 +14,13 @@ namespace ReconciliationApp.EntityFrameworkCore.IncomeOrExpenseTypes
             
         }
 
-        public IncomeOrExpenseType(string displayName, IncomeOrExpenseFlag flag)
+        public IncomeOrExpenseType(string displayName, IncomeOrExpenseFlag flag, string parentId = null)
         {
             Id = Guid.NewGuid().ToString();
             DisplayName = displayName;
             SystemName = displayName;
             Flag = flag;
+            //ParentId = parentId;
         }
 
         /// <summary>
@@ -50,7 +51,12 @@ namespace ReconciliationApp.EntityFrameworkCore.IncomeOrExpenseTypes
 
 
 
-        public virtual ICollection<IncomeOrExpenseType> IncomeOrExpenseTypes { get; set; }
-        public virtual ICollection<Reconciliation> Reconciliations { get; set; }
+        /// <summary>
+        /// Child type should have a parent Id
+        /// </summary>
+        //public string ParentId { get; set; }
+        //[ForeignKey("ParentId")] 
+        //public virtual IncomeOrExpenseType Parent { get; set; }
+
     }
 }

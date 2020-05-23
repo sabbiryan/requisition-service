@@ -17,7 +17,7 @@ namespace ReconciliationApp.EntityFrameworkCore.Seeds
 
             var types = context.IncomeOrExpenseTypes.AsNoTracking().ToList();
 
-            var incomeType1Id = types.First(x=> x.SystemName == IncomeOrExpenseTypeSeedBuilder.IncomeType1).Id;
+            var incomeType1Id = types.First(x=> x.SystemName == IncomeOrExpenseTypeSeedBuilder.Collection).Id;
             var incomeType2Id = types.First(x=> x.SystemName == IncomeOrExpenseTypeSeedBuilder.IncomeType2).Id;
             var incomeType3Id = types.First(x=> x.SystemName == IncomeOrExpenseTypeSeedBuilder.IncomeType3).Id;
 
