@@ -2,8 +2,6 @@ import { Injector, Injectable } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { HttpClient } from '@angular/common/http';
 
-import * as $ from 'jquery';
-
 @Injectable()
 export abstract class AppComponentBase {
 
