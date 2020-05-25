@@ -20,32 +20,32 @@
 // Extra large icons
 
 .icon-xl {
-	width: $icon-size-xl;
-	height: $icon-size-xl;
+  width: $icon-size-xl;
+  height: $icon-size-xl;
 
-	i, svg {
-		font-size: $icon-size-xl - .75;
-	}
+  i, svg {
+    font-size: $icon-size-xl - .75;
+  }
 
-    + .icon-text {
-    	width: calc(100% - $icon-size-xl - 1);
-    }
+  + .icon-text {
+    width: calc(100% - #{$icon-size-xl} - 1);
+  }
 }
 
 
 // Large icons
 
 .icon-lg {
-	width: $icon-size-lg;
-	height: $icon-size-lg;
+  width: $icon-size-lg;
+  height: $icon-size-lg;
 
-	i, svg {
-		font-size: $icon-size-lg - .75;
-	}
+  i, svg {
+    font-size: $icon-size-lg - .75;
+  }
 
-    + .icon-text {
-    	width: calc(100% - $icon-size-lg - 1);
-    }
+  + .icon-text {
+    width: calc(100% - #{$icon-size-lg} - 1);
+  }
 }
 
 
@@ -60,6 +60,6 @@
 	}
 
     + .icon-text {
-    	width: calc(100% - $icon-size-sm - 1);
+    	width: calc(100% - #{$icon-size-sm} - 1);
     }
 }
